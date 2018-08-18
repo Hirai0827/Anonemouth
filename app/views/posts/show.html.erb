@@ -29,7 +29,7 @@
         <%=post.created_at%>
         <br>
         <%=@Favs.where(post_id:post.id).count%>
-        <%=link_to("いいね！","/posts/fav/#{post.id}",method: :post,:class => "favBtn")%>
+        <%=link_to("いいね！","/posts/fav/#{post.id}",:method => "post",:class => "favBtn")%>
       </div>
     </div>
     <%end%>
