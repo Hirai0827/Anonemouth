@@ -59,7 +59,7 @@ class PostsController < ApplicationController
     if @post = Post.find_by(code:params[:code])
       redirect_to("/posts/check/#{@post.id}")
     else
-      @message = "合言葉に対応する投稿が見つかりませんでした"
+      @message = "合言葉に対応する投稿が見つかりませんでした。"
       render("posts/search")
     end
 
