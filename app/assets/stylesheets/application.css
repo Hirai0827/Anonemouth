@@ -38,6 +38,13 @@
    background-color: #00adb5;
    color:#eeeeee;
  }
+ .TitleLink{
+   float: left;
+   font-size: 32px;
+   background-color: #00adb5;
+   text-decoration: none;
+   color:#eeeeee;
+ }
 li{
   float:right;
   padding: 5px 10px 5px 10px;

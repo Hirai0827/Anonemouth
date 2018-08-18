@@ -28,7 +28,8 @@
       <div class="favZone">
         <%=post.created_at%>
         <br>
-        <%=@Favs.where(post_id:post.id).count%>
+
+        <%=@Favs.where(post_id:post.id).count%>いいね！
         <%=button_to("いいね！","/posts/fav/#{post.id}",:class => "favBtn")%>
       </div>
     </div>
