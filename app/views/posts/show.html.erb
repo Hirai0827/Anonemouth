@@ -21,20 +21,25 @@
 
 <div class="bodyContents">
   <h1>気に入った投稿一つをいいねしてください</h1>
-  <div class="PostFrame">
+
     <%@Posts.each do |post|%>
+    <div class="PostFrame">
     <div class="PostContent">
       <%=post.content%>
-      <div class="favZone">
+      </div>
+      <div class="dateZone">
         <%=post.created_at%>
-        <br>
-
+      </div>
+      <div class="favZone">
         <%=@Favs.where(post_id:post.id).count%>いいね！
         <%=button_to("いいね！","/posts/fav/#{post.id}",:class => "favBtn")%>
+
+
       </div>
+
     </div>
     <%end%>
-  </div>
+
 </div>
 
 <!-- Example: <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
