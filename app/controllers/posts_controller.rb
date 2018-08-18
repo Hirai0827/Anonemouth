@@ -77,5 +77,7 @@ class PostsController < ApplicationController
       render("posts/search")
 
   end
+  def top
+  end
 
 end

@@ -13,6 +13,18 @@ h1 {
 .bodyContents {
   margin-top: 160px;
 }
+.bodyContents_top {
+  padding-top: 160px;
+  background-color:#00adb5;
+}
+.top {
+  background-color:#00adb5;
+  color:#dddddd;
+  width: 100%;
+  margin:0 auto;
+  text-align: center;
+}
+
 .PostContent {
   font-size: 32px;
   height: 160px;
@@ -78,7 +90,7 @@ h1 {
   background-color: #eeeeee;
   float: right;
   font-size: 16px;
-  margin-top:110px;
+  margin-top:80px;
   margin-right: 10px;
   text-align: right;
 }
@@ -94,7 +106,10 @@ h1 {
 }
 
 .favBtn, .editBtn, .delBtn{
-  background-color: #eeeeee;
+  background-color: #00bdc5;
   float: right;
   font-size: 16px;
+  border-radius: 6px;
+  border-style: none;
+
 }

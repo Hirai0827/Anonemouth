@@ -18,25 +18,15 @@
 <body>
 <!-- Place your content here -->
 <!-- SCRIPTS -->
-<div class="bodyContents">
-  <div class="PostFrame">
-    <%post = Post.find_by(id:params[:id])%>
-    <div class="PostContent">
-      <%=post.content%>
-      <div class="favZone">
-        <%=post.created_at%>
-        <br>
-        <%=@Favs.where(post_id:post.id).count%>
-        <div class="favBtn">
-          いいね！
-        </div>
 
-      </div>
-      <div class="editZone">
-        <br>
-        <%=link_to(@delMessage,"/posts/delete/#{post.id}",:class => "delBtn")%>
-      </div>
-    </div>
+<div class="bodyContents_top">
+  <h1 class = "top">Anonemouth</h1>
+  <h2 class = "top">超ミニマルな匿名投稿SNS</h2>
+  <div class="top">
+    Anonemouthは掲示板です。 <br>
+    ユーザー登録もなければタイムライン機能もなく、できることといえば <br>
+    メッセージを投稿することとランダムに表示される投稿にいいね！を付けることぐらいです。 <br>
+    練習なのでしょうがない（暴論） <br>
   </div>
 </div>
 
