@@ -1,0 +1,100 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  background-color: #dddddd;
+  color:#393e46;
+}
+h1 {
+  //background-color: #30499B;
+  display: block;
+  width:100%;
+}
+.bodyContents {
+  margin-top: 160px;
+}
+.PostContent {
+  font-size: 32px;
+  height: 160px;
+  border:2px solid #dddddd;
+  margin:10px 320px 10px 320px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 12px;
+  background-color: #eeeeee;
+  box-shadow: -4px -5px 2px 0px #cccccc inset;
+}
+.edit_post_message {
+  font-size: 32px;
+  height: 160px;
+  border:2px solid #dddddd;
+  margin:10px 320px 10px 320px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 12px;
+  background-color: #eeeeee;
+  box-shadow: -4px -5px 2px 0px #cccccc inset;
+  text-align: center;
+}
+
+.searchField{
+  background-color: #eeeeee;
+  display: block;
+  width: 480px;
+  height: 30px;
+  margin:0 auto;
+  border-style: none;
+  border-radius: 6px;
+  background-color: #cccccc;
+}
+
+.inputField{
+  background-color: #eeeeee;
+
+}
+.writingZone{
+  background-color: #cccccc;
+  border-radius: 6px;
+  font-size: 15px;
+  border-style: none;
+}
+.send_btn{
+  background-color: #00adb5;
+  color: #eeeeee;
+  border-radius: 12px;
+  margin-right: 320px;
+  width:240px;
+  height:60px;
+  float:right;
+  box-shadow: -4px -5px 2px 0px #cccccc inset;
+  border-style: none;
+  font-size: 32px;
+}
+.send_btn:active{
+  background-color: #00bdc5;
+}
+.send_btn:hover{
+  background-color: #009da5;
+}
+.favZone{
+  background-color: #eeeeee;
+  float: right;
+  font-size: 16px;
+  margin-top:110px;
+  margin-right: 10px;
+  text-align: right;
+}
+.editZone{
+  background-color: #eeeeee;
+  position: relative;
+  height:30px;
+  top: 100px;
+  float: left;
+  font-size: 16px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.favBtn, .editBtn, .delBtn{
+  background-color: #eeeeee;
+  float: right;
+  font-size: 16px;
+}

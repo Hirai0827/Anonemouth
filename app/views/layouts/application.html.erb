@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anonemouth</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="TitleLogo">
+        Anonemouth
+      </div>
+      <ul class="topMenu">
+        <li><%=link_to("確認する","/posts/search",:class => "topMenu")%></li>
+        <li><%=link_to("投稿する","/posts/create",:class => "topMenu")%></li>
+        <li><%=link_to("投票する","/posts/show",:class => "topMenu")%></li>
+      </ul>
+    </div>
+    <%= yield %>
+  </body>
+</html>

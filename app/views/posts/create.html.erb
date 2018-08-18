@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="">
+<!--[if lt IE 9]>
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="">
+</head>
+<body>
+<!-- Place your content here -->
+<div class="bodyContents">
+  <h1>投稿</h1>
+  <div class="errorMessage">
+    <%=@message%>
+  </div>
+  <div class="edit_post_message">
+    投稿内容を記入してください
+    <%= form_tag("/posts/send") do %>
+    <div class="inputField">
+      <textarea name="content" rows="6" cols="50" class ="writingZone"></textarea>
+    </div>
+
+
+  </div>
+  <button type="submit" class = "send_btn">投稿</button>
+  <%end%>
+
+</div>
+
+
+<!-- SCRIPTS -->
+<!-- Example: <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+</body>
+</html>
